@@ -5,7 +5,13 @@
 }
 
 h1, h2 {
-  margin-top: 0px;
+  margin: 0px;
+}
+
+.col-md-6 {
+  margin: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 body {
@@ -23,11 +29,13 @@ header {
   background-image: linear-gradient(90deg, #4dc076, #b3e895);
   position: absolute;
   z-index: -20;
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 90%);
 }
 
 .header-container {
-  padding-top: 60px;
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .header-title {
@@ -101,7 +109,9 @@ header {
 
 .plan-feature-list {
   list-style: none;
-  margin: 37px 60px 42px 115px;
+  margin: 37px auto 42px;
+  padding: 0 30px 0 80px;
+  max-width: 390px;
 }
 
 .plan-listItem {
@@ -125,7 +135,7 @@ header {
   background-color: #bff1e0;
   border-radius: 50%;
   position: absolute;
-  left: -40px;
+  left: -45px;
 }
 
 .plan-listItem p {
@@ -147,6 +157,82 @@ header {
 }
 
 .create-account-cta label::after {
+  font-family: Lato;
+  content: '\2192';
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 10px;
+  position: relative;
+  opacity: 0.3;
+  top: 2px;
+}
+
+.enterprise-plan {
+  background-color: #373765;
+  background-image: linear-gradient(to bottom right, #32325d, #29294c);
+  border-radius: 0px 6px 6px 0px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  position: absolute;
+  top: 32px;
+  z-index: -20;
+}
+
+.enterprise-plan h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  padding: 30px 0 20px 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.enterprise-plan .plan-description {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  line-height: 1.55;
+  letter-spacing: 0.2px;
+  margin: 0 30px;
+  padding: 0 30px;
+}
+
+.enterprise-plan .plan-table {
+  margin: 24px 30px 40px 30px;
+}
+
+.enterprise-plan table, .enterprise-plan tr {
+  width: 100%;
+}
+
+.enterprise-plan td {
+  border: 1px solid #3F3F72;
+  width: 50%;
+  text-align: center;
+  padding: 15px 0;
+  color: white;
+  opacity: 0.9;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+}
+
+.enterprise-plan .contact-sales-cta {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3D3D73;
+}
+
+.enterprise-plan .contact-sales-cta label {
+  text-transform: uppercase;
+  color: #92C3FD;
+  letter-spacing: 1px;
+}
+
+.enterprise-plan .contact-sales-cta label::after {
   font-family: Lato;
   content: '\2192';
   font-size: 20px;
