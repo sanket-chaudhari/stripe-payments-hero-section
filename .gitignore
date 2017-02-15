@@ -1,3 +1,4 @@
 *.jade
 css/*.sass
 prepros.cfg
+css/partials/
